@@ -18,6 +18,8 @@
 		78A5BA21224A1D6400130044 /* ArboreaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5BA20224A1D6400130044 /* ArboreaUITests.swift */; };
 		78A5BA2F224A384E00130044 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5BA2E224A384E00130044 /* BaseViewController.swift */; };
 		78A5BA31224A397C00130044 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5BA30224A397C00130044 /* BaseNavigationViewController.swift */; };
+		78A5BA34224A3A4E00130044 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5BA32224A3A4E00130044 /* MainMenuViewController.swift */; };
+		78A5BA35224A3A4E00130044 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A5BA33224A3A4E00130044 /* MainMenuViewController.xib */; };
 		9D961D1C28018A89521D39F9 /* Pods_ArboreaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC37F6C5E728273B331371 /* Pods_ArboreaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		78A5BA22224A1D6400130044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78A5BA2E224A384E00130044 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		78A5BA30224A397C00130044 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		78A5BA32224A3A4E00130044 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		78A5BA33224A3A4E00130044 /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 		A9EC8F302BD6FFAFF33AA94F /* Pods-ArboreaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArboreaTests.debug.xcconfig"; path = "Target Support Files/Pods-ArboreaTests/Pods-ArboreaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEE9222627754F42FF20FABB /* Pods-ArboreaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArboreaTests.release.xcconfig"; path = "Target Support Files/Pods-ArboreaTests/Pods-ArboreaTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF8A23963701F2FDD830DAF3 /* Pods_Arborea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arborea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,12 +122,14 @@
 		78A5B9FF224A1D6000130044 /* Arborea */ = {
 			isa = PBXGroup;
 			children = (
-				78A5BA00224A1D6000130044 /* AppDelegate.swift */,
+				78A5BA32224A3A4E00130044 /* MainMenuViewController.swift */,
+				78A5BA33224A3A4E00130044 /* MainMenuViewController.xib */,
 				78A5BA02224A1D6000130044 /* ViewController.swift */,
 				78A5BA04224A1D6000130044 /* Main.storyboard */,
 				78A5BA07224A1D6400130044 /* Assets.xcassets */,
 				78A5BA09224A1D6400130044 /* LaunchScreen.storyboard */,
 				78A5BA0C224A1D6400130044 /* Info.plist */,
+				78A5BA00224A1D6000130044 /* AppDelegate.swift */,
 				78A5BA2E224A384E00130044 /* BaseViewController.swift */,
 				78A5BA30224A397C00130044 /* BaseNavigationViewController.swift */,
 			);
@@ -279,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A5BA35224A3A4E00130044 /* MainMenuViewController.xib in Resources */,
 				78A5BA0B224A1D6400130044 /* LaunchScreen.storyboard in Resources */,
 				78A5BA08224A1D6400130044 /* Assets.xcassets in Resources */,
 				78A5BA06224A1D6000130044 /* Main.storyboard in Resources */,
@@ -402,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A5BA03224A1D6000130044 /* ViewController.swift in Sources */,
+				78A5BA34224A3A4E00130044 /* MainMenuViewController.swift in Sources */,
 				78A5BA01224A1D6000130044 /* AppDelegate.swift in Sources */,
 				78A5BA2F224A384E00130044 /* BaseViewController.swift in Sources */,
 				78A5BA31224A397C00130044 /* BaseNavigationViewController.swift in Sources */,
