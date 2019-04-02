@@ -9,10 +9,10 @@
 import UIKit
 
 class RandomNumberInRangeViewControllerViewModel: BaseViewModel {
-    private lazy var minNumber:Int = {
+    private lazy var headNumber:Int = {
         return 0
     }()
-    private lazy var maxNumber:Int = {
+    private lazy var tailNumber:Int = {
         return 0
     }()
     private lazy var stepNumber:Int = {
@@ -20,17 +20,23 @@ class RandomNumberInRangeViewControllerViewModel: BaseViewModel {
     }()
     
     public func produceRandomNumber() -> Int! {
-        let range:Int = Int(self.maxNumber - self.minNumber)
-        let randomNum:Int = Int(arc4random() % UInt32(range))
-        let result:Int = randomNum * stepNumber + self.minNumber
+        let range:Int = Int(abs(self.headNumber - self.tailNumber))
+        let rangeWithStep:UInt32 = UInt32(range / self.stepNumber) + 1
+        let randomNum:Int = Int(arc4random() % rangeWithStep)
+        let minNumber:Int = Int(self.headNumber > self.tailNumber ? self.tailNumber : self.headNumber)
+        let result:Int = randomNum * stepNumber + minNumber
         return result
     }
     
-    public func setMinNumber(newValue:Int) {
-        self.minNumber = newValue
+    public func setHeadNumber(newValue:Int) {
+        self.headNumber = newValue
     }
     
-    public func setMaxNumber(newValue:Int) {
-        self.maxNumber = newValue
+    public func setTailNumber(newValue:Int) {
+        self.tailNumber = newValue
+    }
+    
+    public func setStepNumber(newValue:Int) {
+        self.stepNumber = newValue
     }
 }

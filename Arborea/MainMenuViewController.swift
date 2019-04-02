@@ -10,10 +10,16 @@ import UIKit
 
 class MainMenuViewController: UIViewController {
 
+    @IBOutlet weak var randomNumberInRangeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.randomNumberInRangeButton.addTarget(self, action: #selector(openRandomNumberInRangeViewController), for: UIControl.Event.touchUpInside)
+    }
+    
+    @objc private func openRandomNumberInRangeViewController() {
+        let randomNumberInRangeViewController = RandomNumberInRangeViewController()
+        self.navigationController?.pushViewController(randomNumberInRangeViewController, animated: true)
     }
 
 
