@@ -9,6 +9,7 @@
 import UIKit
 
 class RandomNumberInRangeViewController: BaseViewController {
+    private var viewModel:RandomNumberInRangeViewControllerViewModel = RandomNumberInRangeViewControllerViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()

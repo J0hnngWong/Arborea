@@ -9,6 +9,7 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    var baseViewModel = BaseViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +17,9 @@ class BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    func initializeWithViewModel(viewModel:BaseViewModel) {
+        self.baseViewModel = viewModel
+    }
     /*
     // MARK: - Navigation
 
