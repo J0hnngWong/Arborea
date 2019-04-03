@@ -16,10 +16,13 @@ class RandomNumberInRangeViewControllerViewModel: BaseViewModel {
         return 0
     }()
     private lazy var stepNumber:Int = {
-        return 0
+        return 1
     }()
     
     public func produceRandomNumber() -> Int! {
+        if self.stepNumber == 0 {
+            self.setStepNumber(newValue: 1)
+        }
         let range:Int = Int(abs(self.headNumber - self.tailNumber))
         let rangeWithStep:UInt32 = UInt32(range / self.stepNumber) + 1
         let randomNum:Int = Int(arc4random() % rangeWithStep)
