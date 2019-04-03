@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		353E9B03F619125ED9F77571 /* Pods_Arborea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8A23963701F2FDD830DAF3 /* Pods_Arborea.framework */; };
 		5F488DCFDBEF20DA6FAF19A9 /* Pods_ArboreaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCC25EDBBDE800ECD72318B /* Pods_ArboreaUITests.framework */; };
+		7809A70F22544E4D0001B311 /* RandomListResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809A70D22544E4D0001B311 /* RandomListResultViewController.swift */; };
+		7809A71022544E4D0001B311 /* RandomListResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809A70E22544E4D0001B311 /* RandomListResultViewController.xib */; };
+		7809A71322544E620001B311 /* RandomListListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809A71122544E620001B311 /* RandomListListViewController.swift */; };
+		7809A71422544E620001B311 /* RandomListListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809A71222544E620001B311 /* RandomListListViewController.xib */; };
+		7809A71622544EA80001B311 /* RandomListResultViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809A71522544EA80001B311 /* RandomListResultViewControllerViewModel.swift */; };
+		7809A71822544EB80001B311 /* RandomListListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809A71722544EB80001B311 /* RandomListListViewModel.swift */; };
 		78A5BA01224A1D6000130044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5BA00224A1D6000130044 /* AppDelegate.swift */; };
 		78A5BA03224A1D6000130044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5BA02224A1D6000130044 /* ViewController.swift */; };
 		78A5BA06224A1D6000130044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A5BA04224A1D6000130044 /* Main.storyboard */; };
@@ -48,6 +54,12 @@
 		0DCC25EDBBDE800ECD72318B /* Pods_ArboreaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArboreaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1567B5EB11EC8FBFF902624B /* Pods-Arborea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arborea.release.xcconfig"; path = "Target Support Files/Pods-Arborea/Pods-Arborea.release.xcconfig"; sourceTree = "<group>"; };
 		63EC37F6C5E728273B331371 /* Pods_ArboreaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArboreaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7809A70D22544E4D0001B311 /* RandomListResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListResultViewController.swift; sourceTree = "<group>"; };
+		7809A70E22544E4D0001B311 /* RandomListResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomListResultViewController.xib; sourceTree = "<group>"; };
+		7809A71122544E620001B311 /* RandomListListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListListViewController.swift; sourceTree = "<group>"; };
+		7809A71222544E620001B311 /* RandomListListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomListListViewController.xib; sourceTree = "<group>"; };
+		7809A71522544EA80001B311 /* RandomListResultViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListResultViewControllerViewModel.swift; sourceTree = "<group>"; };
+		7809A71722544EB80001B311 /* RandomListListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListListViewModel.swift; sourceTree = "<group>"; };
 		78A5B9FD224A1D6000130044 /* Arborea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arborea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A5BA00224A1D6000130044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A5BA02224A1D6000130044 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +117,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7809A70B22544DD70001B311 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7809A71522544EA80001B311 /* RandomListResultViewControllerViewModel.swift */,
+				7809A71722544EB80001B311 /* RandomListListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7809A70C22544DE80001B311 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7809A70D22544E4D0001B311 /* RandomListResultViewController.swift */,
+				7809A70E22544E4D0001B311 /* RandomListResultViewController.xib */,
+				7809A71122544E620001B311 /* RandomListListViewController.swift */,
+				7809A71222544E620001B311 /* RandomListListViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		78A5B9F4224A1D6000130044 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +164,7 @@
 			children = (
 				78C73A2D225327250010134D /* RandomDate */,
 				78C73A2C225326F20010134D /* RandomCombination */,
-				78C73A2B225326C60010134D /* RandomSelect */,
+				78C73A2B225326C60010134D /* RandomList */,
 				78C73A2A225326840010134D /* RandomNumberInRange */,
 				78A5BA32224A3A4E00130044 /* MainMenuViewController.swift */,
 				78A5BA33224A3A4E00130044 /* MainMenuViewController.xib */,
@@ -176,11 +208,13 @@
 			path = RandomNumberInRange;
 			sourceTree = "<group>";
 		};
-		78C73A2B225326C60010134D /* RandomSelect */ = {
+		78C73A2B225326C60010134D /* RandomList */ = {
 			isa = PBXGroup;
 			children = (
+				7809A70C22544DE80001B311 /* ViewController */,
+				7809A70B22544DD70001B311 /* ViewModel */,
 			);
-			path = RandomSelect;
+			path = RandomList;
 			sourceTree = "<group>";
 		};
 		78C73A2C225326F20010134D /* RandomCombination */ = {
@@ -345,10 +379,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7809A71422544E620001B311 /* RandomListListViewController.xib in Resources */,
 				78A5BA35224A3A4E00130044 /* MainMenuViewController.xib in Resources */,
 				78C73A372253280F0010134D /* RandomNumberInRangeViewController.xib in Resources */,
 				78A5BA0B224A1D6400130044 /* LaunchScreen.storyboard in Resources */,
 				78A5BA08224A1D6400130044 /* Assets.xcassets in Resources */,
+				7809A71022544E4D0001B311 /* RandomListResultViewController.xib in Resources */,
 				78A5BA06224A1D6000130044 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,12 +506,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A5BA03224A1D6000130044 /* ViewController.swift in Sources */,
+				7809A71322544E620001B311 /* RandomListListViewController.swift in Sources */,
 				78A5BA34224A3A4E00130044 /* MainMenuViewController.swift in Sources */,
 				78C73A32225327EC0010134D /* RandomNumberInRangeViewControllerViewModel.swift in Sources */,
 				78A5BA01224A1D6000130044 /* AppDelegate.swift in Sources */,
 				78A5BA2F224A384E00130044 /* BaseViewController.swift in Sources */,
 				78A5BA31224A397C00130044 /* BaseNavigationViewController.swift in Sources */,
 				78C73A30225327920010134D /* BaseViewModel.swift in Sources */,
+				7809A71622544EA80001B311 /* RandomListResultViewControllerViewModel.swift in Sources */,
+				7809A71822544EB80001B311 /* RandomListListViewModel.swift in Sources */,
+				7809A70F22544E4D0001B311 /* RandomListResultViewController.swift in Sources */,
 				78C73A362253280F0010134D /* RandomNumberInRangeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
