@@ -20,7 +20,7 @@ class RandomNumberInRangeViewControllerViewModel: BaseViewModel {
     }()
     
     public func produceRandomNumber() -> Int! {
-        if self.stepNumber == 0 {
+        if self.stepNumber <= 0 {
             self.setStepNumber(newValue: 1)
         }
         let range:Int = Int(abs(self.headNumber - self.tailNumber))

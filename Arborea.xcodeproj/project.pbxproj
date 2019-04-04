@@ -14,7 +14,10 @@
 		7809A71322544E620001B311 /* RandomListListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809A71122544E620001B311 /* RandomListListViewController.swift */; };
 		7809A71422544E620001B311 /* RandomListListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809A71222544E620001B311 /* RandomListListViewController.xib */; };
 		7809A71622544EA80001B311 /* RandomListResultViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809A71522544EA80001B311 /* RandomListResultViewControllerViewModel.swift */; };
-		7809A71822544EB80001B311 /* RandomListListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809A71722544EB80001B311 /* RandomListListViewModel.swift */; };
+		7809A71822544EB80001B311 /* RandomListListViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809A71722544EB80001B311 /* RandomListListViewControllerViewModel.swift */; };
+		7882B74F2255FA13008C9F8F /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7882B74E2255FA13008C9F8F /* BaseModel.swift */; };
+		7882B7512255FA41008C9F8F /* RandomListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7882B7502255FA41008C9F8F /* RandomListCellModel.swift */; };
+		7882B7532256029E008C9F8F /* PublicToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7882B7522256029E008C9F8F /* PublicToolBox.swift */; };
 		78A5BA01224A1D6000130044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5BA00224A1D6000130044 /* AppDelegate.swift */; };
 		78A5BA03224A1D6000130044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5BA02224A1D6000130044 /* ViewController.swift */; };
 		78A5BA06224A1D6000130044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A5BA04224A1D6000130044 /* Main.storyboard */; };
@@ -59,7 +62,10 @@
 		7809A71122544E620001B311 /* RandomListListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListListViewController.swift; sourceTree = "<group>"; };
 		7809A71222544E620001B311 /* RandomListListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomListListViewController.xib; sourceTree = "<group>"; };
 		7809A71522544EA80001B311 /* RandomListResultViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListResultViewControllerViewModel.swift; sourceTree = "<group>"; };
-		7809A71722544EB80001B311 /* RandomListListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListListViewModel.swift; sourceTree = "<group>"; };
+		7809A71722544EB80001B311 /* RandomListListViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListListViewControllerViewModel.swift; sourceTree = "<group>"; };
+		7882B74E2255FA13008C9F8F /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		7882B7502255FA41008C9F8F /* RandomListCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListCellModel.swift; sourceTree = "<group>"; };
+		7882B7522256029E008C9F8F /* PublicToolBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicToolBox.swift; sourceTree = "<group>"; };
 		78A5B9FD224A1D6000130044 /* Arborea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arborea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A5BA00224A1D6000130044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A5BA02224A1D6000130044 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				7809A71522544EA80001B311 /* RandomListResultViewControllerViewModel.swift */,
-				7809A71722544EB80001B311 /* RandomListListViewModel.swift */,
+				7809A71722544EB80001B311 /* RandomListListViewControllerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -135,6 +141,14 @@
 				7809A71222544E620001B311 /* RandomListListViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7882B74C2255F9CE008C9F8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7882B7502255FA41008C9F8F /* RandomListCellModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		78A5B9F4224A1D6000130044 = {
@@ -177,6 +191,8 @@
 				78A5BA2E224A384E00130044 /* BaseViewController.swift */,
 				78A5BA30224A397C00130044 /* BaseNavigationViewController.swift */,
 				78C73A2F225327920010134D /* BaseViewModel.swift */,
+				7882B74E2255FA13008C9F8F /* BaseModel.swift */,
+				7882B7522256029E008C9F8F /* PublicToolBox.swift */,
 			);
 			path = Arborea;
 			sourceTree = "<group>";
@@ -211,6 +227,7 @@
 		78C73A2B225326C60010134D /* RandomList */ = {
 			isa = PBXGroup;
 			children = (
+				7882B74C2255F9CE008C9F8F /* Model */,
 				7809A70C22544DE80001B311 /* ViewController */,
 				7809A70B22544DD70001B311 /* ViewModel */,
 			);
@@ -506,15 +523,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A5BA03224A1D6000130044 /* ViewController.swift in Sources */,
+				7882B7532256029E008C9F8F /* PublicToolBox.swift in Sources */,
 				7809A71322544E620001B311 /* RandomListListViewController.swift in Sources */,
+				7882B7512255FA41008C9F8F /* RandomListCellModel.swift in Sources */,
 				78A5BA34224A3A4E00130044 /* MainMenuViewController.swift in Sources */,
+				7882B74F2255FA13008C9F8F /* BaseModel.swift in Sources */,
 				78C73A32225327EC0010134D /* RandomNumberInRangeViewControllerViewModel.swift in Sources */,
 				78A5BA01224A1D6000130044 /* AppDelegate.swift in Sources */,
 				78A5BA2F224A384E00130044 /* BaseViewController.swift in Sources */,
 				78A5BA31224A397C00130044 /* BaseNavigationViewController.swift in Sources */,
 				78C73A30225327920010134D /* BaseViewModel.swift in Sources */,
 				7809A71622544EA80001B311 /* RandomListResultViewControllerViewModel.swift in Sources */,
-				7809A71822544EB80001B311 /* RandomListListViewModel.swift in Sources */,
+				7809A71822544EB80001B311 /* RandomListListViewControllerViewModel.swift in Sources */,
 				7809A70F22544E4D0001B311 /* RandomListResultViewController.swift in Sources */,
 				78C73A362253280F0010134D /* RandomNumberInRangeViewController.swift in Sources */,
 			);

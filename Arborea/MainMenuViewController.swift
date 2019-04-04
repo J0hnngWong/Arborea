@@ -11,15 +11,22 @@ import UIKit
 class MainMenuViewController: UIViewController {
 
     @IBOutlet weak var randomNumberInRangeButton: UIButton!
+    @IBOutlet weak var randomListButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.randomNumberInRangeButton.addTarget(self, action: #selector(openRandomNumberInRangeViewController), for: UIControl.Event.touchUpInside)
+        self.randomListButton.addTarget(self, action: #selector(openRandomListViewController), for: UIControl.Event.touchUpInside)
     }
     
     @objc private func openRandomNumberInRangeViewController() {
         let randomNumberInRangeViewController = RandomNumberInRangeViewController()
         self.navigationController?.pushViewController(randomNumberInRangeViewController, animated: true)
+    }
+    
+    @objc private func openRandomListViewController() {
+        let randomListViewController = RandomListListViewController()
+        self.navigationController?.pushViewController(randomListViewController, animated: true)
     }
 
 

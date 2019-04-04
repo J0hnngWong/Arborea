@@ -9,11 +9,44 @@
 import UIKit
 
 class RandomListListViewController: BaseViewController {
+    
+    var viewModel: RandomListListViewControllerViewModel = RandomListListViewControllerViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.renderSubviews()
+        self.renderEvents()
+        self.bindData()
+        self.test()
+    }
+    
+    private func renderSubviews() {
+        
+    }
+    
+    private func renderEvents() {
+        
+    }
+    
+    private func bindData() {
+        
+    }
+    
+    private func produceRandomSortOfTableCell() {
+        self.viewModel.produceRandomSortOnDataSource()
+    }
+    
+    private func test() {
+        for index in 1...10 {
+            let model: RandomListCellModel = RandomListCellModel(category: String(index), value: String(index))
+            self.viewModel.addObjectToDataSource(object: model)
+        }
+        print("before random : ")
+        self.viewModel.printDataSource()
+        self.produceRandomSortOfTableCell()
+        print("after random : ")
+        self.viewModel.printDataSource()
     }
 
 
