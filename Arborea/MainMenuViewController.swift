@@ -13,10 +13,25 @@ class MainMenuViewController: UIViewController {
     @IBOutlet weak var randomNumberInRangeButton: UIButton!
     @IBOutlet weak var randomListButton: UIButton!
     
+    lazy var mainMenuOptionArray: Array<UIViewController> = {
+        let randomNumberInRangeViewController = RandomNumberInRangeViewController()
+        let randomListViewController = RandomListListViewController()
+        let option: Array<UIViewController> = [randomNumberInRangeViewController, randomListViewController]
+        return option
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.randomNumberInRangeButton.addTarget(self, action: #selector(openRandomNumberInRangeViewController), for: UIControl.Event.touchUpInside)
         self.randomListButton.addTarget(self, action: #selector(openRandomListViewController), for: UIControl.Event.touchUpInside)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.view.becomeFirstResponder()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.view.resignFirstResponder()
     }
     
     @objc private func openRandomNumberInRangeViewController() {
@@ -27,6 +42,12 @@ class MainMenuViewController: UIViewController {
     @objc private func openRandomListViewController() {
         let randomListViewController = RandomListListViewController()
         self.navigationController?.pushViewController(randomListViewController, animated: true)
+    }
+    
+    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == UIEvent.EventSubtype.motionShake {
+            self.navigationController?.pushViewController(self.mainMenuOptionArray[PublicToolBox.getRandomNumber(maxIndex: 1)], animated: true)
+        }
     }
 
 
