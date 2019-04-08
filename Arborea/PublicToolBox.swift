@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum CoinSurfaceType {
+    case head
+    case tail
+}
+
 class PublicToolBox: NSObject {
     //return a number between [headNumber tailNumber], with a stepNumber,if step number is less then or equal to zero, it will set to 1
     class func getRandomNumber(headNumber: Int, tailNumber: Int, stepNumber: Int) -> Int {
@@ -25,5 +30,14 @@ class PublicToolBox: NSObject {
     
     class func getRandomNumber(maxIndex: Int) -> Int {
         return PublicToolBox.getRandomNumber(headNumber: 0, tailNumber: maxIndex, stepNumber: 1)
+    }
+    
+    class func getHeadOrTail() -> CoinSurfaceType {
+        let surface: Int = PublicToolBox.getRandomNumber(headNumber: 0, tailNumber: 1, stepNumber: 1)
+        if surface == 1 {
+            return CoinSurfaceType.head
+        } else {
+            return CoinSurfaceType.tail
+        }
     }
 }
