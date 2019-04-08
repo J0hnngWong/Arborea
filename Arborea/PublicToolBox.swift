@@ -22,4 +22,8 @@ class PublicToolBox: NSObject {
         let result:Int = randomNum * correctStepNumber + minNumber
         return result
     }
+    
+    class func getRandomNumber(maxIndex: Int) -> Int {
+        return PublicToolBox.getRandomNumber(headNumber: 0, tailNumber: maxIndex, stepNumber: 1)
+    }
 }
